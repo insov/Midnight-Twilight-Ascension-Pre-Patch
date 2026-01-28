@@ -35,7 +35,7 @@ PrePathData.RARES = {
     { criteriaID=105734, vignetteID=7009,  name={ru="Коготь Бездны – проклинарий",en="Voidclaw Hexathor"} },
     { criteriaID=105738, vignetteID=7006,  name={ru="Зеркалвайз",en="Mirrorvise"} },
     { criteriaID=105741, vignetteID=7003,  name={ru="Салигрум Наблюдатель",en="Saligrum the Observer"} },
-    { criteriaID=109583, vignetteID=7340,  name={ru="Глас Затмения",en="Voice of the Eclipse"}, noTimer=true },
+    { criteriaID=109583, name={ru="Глас Затмения",en="Voice of the Eclipse"}, noTimer=true },
 }
 
 PrePathData.CHAT_TRIGGERS = {
@@ -108,7 +108,7 @@ button.text:SetText("Pre-Path")
 -- MAIN FRAME
 ------------------------------------------------------------
 local frame = CreateFrame("Frame", "PrePathMainFrame", UIParent, "BackdropTemplate")
-frame:SetSize(430, 540)
+frame:SetSize(430, 480)
 frame:SetPoint("CENTER")
 frame:SetBackdrop({ bgFile="Interface/Tooltips/UI-Tooltip-Background" })
 frame:SetBackdropColor(0,0,0,0.92)
@@ -322,3 +322,4 @@ SlashCmdList["PREPATH"] = function(message)
         frame:SetShown(not frame:IsShown())
     end
 end
+
